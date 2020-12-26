@@ -12,13 +12,13 @@ import com.example.SecondProj.service.PersonService;
 @RequestMapping
 @RestController
 public class PersonController {
-
+	@Autowired
 	private PersonService personService;
 	
-	@Autowired
-	public PersonController(PersonService personService) {
-		this.personService = personService;
-	}
+//	@Autowired
+//	public PersonController(PersonService personService) {
+//		this.personService = personService;
+//	}
 	
 	@PostMapping("/addperson")
 	public void addPerson(@RequestBody Person person) {

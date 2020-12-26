@@ -9,7 +9,7 @@ import com.example.SecondProj.model.Person;
 
 @Service
 public class PersonService {
-	
+	@Autowired
 	private PersonDao personDao;
 	
 //	@Autowired
@@ -17,10 +17,10 @@ public class PersonService {
 //		this.personDao = personDao;
 //	}
 	
-	@Autowired
-	public PersonService(PersonDao personDao) {
-		this.personDao = personDao;
-	}
+//	@Autowired
+//	public PersonService(PersonDao personDao) {
+//		this.personDao = personDao;
+//	}
 
 	public int addPerson(Person person) {
 		return personDao.insertPerson(person);
