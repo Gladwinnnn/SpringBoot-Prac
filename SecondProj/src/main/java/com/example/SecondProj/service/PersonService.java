@@ -10,7 +10,12 @@ import com.example.SecondProj.model.Person;
 @Service
 public class PersonService {
 	
-	private final PersonDao personDao;
+	private PersonDao personDao;
+	
+//	@Autowired
+//	public PersonService(@Qualifier("fakeDao") PersonDao personDao) {
+//		this.personDao = personDao;
+//	}
 	
 	@Autowired
 	public PersonService(PersonDao personDao) {

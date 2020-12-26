@@ -13,7 +13,7 @@ import com.example.SecondProj.service.PersonService;
 @RestController
 public class PersonController {
 
-	private final PersonService personService;
+	private PersonService personService;
 	
 	@Autowired
 	public PersonController(PersonService personService) {
