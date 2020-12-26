@@ -12,6 +12,7 @@ import com.example.SecondProj.service.PersonService;
 @RequestMapping
 @RestController
 public class PersonController {
+	
 	@Autowired
 	private PersonService personService;
 	
