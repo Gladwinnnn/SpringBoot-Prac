@@ -9,6 +9,7 @@ import com.example.SecondProj.model.Person;
 
 @Service
 public class PersonService {
+	
 	@Autowired
 	private PersonDao personDao;
 	
